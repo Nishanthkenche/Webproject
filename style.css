@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#d6d3d1;
+    color:#1f1f1f;
+}
+
+header{
+    background:#f8f8f8;
+    text-align:center;
+    padding:35px;
+    border-bottom:4px solid #6b4f3b;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#555;
+}
+
+nav{
+    background:#1f1f1f;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c4a484;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#f8f8f8;
+}
+
+.hero h2{
+    margin-bottom:15px;
+}
+
+section{
+    padding:40px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#6b4f3b;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:left;
+}
+
+video,
+audio{
+    width:100%;
+}
+
+ul{
+    margin-left:20px;
+}
+
+ul li{
+    margin:10px 0;
+}
+
+ul a{
+    color:#6b4f3b;
+    text-decoration:none;
+}
+
+ul a:hover{
+    color:black;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#6b4f3b;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4f3728;
+}
+
+footer{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-wrap:wrap;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+}
